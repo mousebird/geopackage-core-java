@@ -29,7 +29,13 @@ public enum ContentsDataType {
 	 * 
 	 * @since 1.2.1
 	 */
-	ELEVATION_TILES("2d-gridded-coverage");
+	ELEVATION_TILES("2d-gridded-coverage"),
+
+    /**
+      * Mapbox vector tiles stored in a GeoPackage database.
+      * This is an invention of mousebird consulting and is not standard.
+      */
+    VECTILES("mbvectiles");
 
 	/**
 	 * Data type name

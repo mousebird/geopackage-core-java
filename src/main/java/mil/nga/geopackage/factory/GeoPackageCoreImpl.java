@@ -219,6 +219,15 @@ public abstract class GeoPackageCoreImpl implements GeoPackageCore {
 		return tableNames;
 	}
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public List<String> getVecTileTables() {
+        List<String> tableNames = getTables(ContentsDataType.VECTILES);
+        return tableNames;
+    }
+
 	/**
 	 * {@inheritDoc}
 	 */

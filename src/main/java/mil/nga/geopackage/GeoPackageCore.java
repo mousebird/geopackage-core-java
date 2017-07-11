@@ -127,6 +127,11 @@ public interface GeoPackageCore extends Closeable {
 	 * @return table names
 	 */
 	public List<String> getTileTables();
+    
+    /**
+     * Get the vector tile tables.
+     */
+    public List<String> getVecTileTables();
 
 	/**
 	 * Get the attributes tables
